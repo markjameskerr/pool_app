@@ -14,6 +14,7 @@ import java.util.Scanner;
 public class Game {
 
 private int gamemode;
+int userOption = -1;
     /**
      * @return the gamemode
      */
@@ -28,6 +29,30 @@ private int gamemode;
     
     private Player[] allPlayers;
     
+    public void playGame(){
+        
+        while(userOption != 3){
+            Scanner s = new Scanner(System.in);
+            System.out.println("Please choose who won the frame: " + "\n" + "0 = Player1" + "\n" + "1 = Player2" + "\n" + "3 = Exit Game");
+            
+            userOption = s.nextInt();
+            
+            switch(userOption){
+		case 0:{
+			System.out.println(allPlayers[userOption].getName() + " Won the frame");
+			break;
+		}
+		case 1:{
+			System.out.println(allPlayers[userOption].getName() + " Won the frame");
+			break;
+		}
+		case 3:{
+			System.out.println("Exit Game");
+			break;
+        }
+        }
+        }
+    }
     
     
     public Game(int gamemode){
@@ -47,9 +72,5 @@ private int gamemode;
             System.out.println(allPlayers[i].getName());
         }
         
-        
-        
-        
-
 }
 }

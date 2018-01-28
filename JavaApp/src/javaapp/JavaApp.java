@@ -21,7 +21,8 @@ public class JavaApp {
         
         int gamemode = s.nextInt();
         Game game = new Game(gamemode);
-        System.out.println("Thank you for selecting game mode " + game.getGamemode());
+        
+        game.playGame();
         
  
     }
