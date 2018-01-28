@@ -5,6 +5,8 @@
  */
 package javaapp;
 
+import java.util.Scanner;
+
 /**
  *
  * @author markk
@@ -29,9 +31,18 @@ private int gamemode;
     
     
     public Game(int gamemode){
+        
         this.gamemode = gamemode;
+        Scanner s = new Scanner(System.in);
+        
         if(gamemode == 1){
             allPlayers = new Player[2];
+        }
+        
+        for (int i = 0; i < allPlayers.length; i ++)
+        {
+            System.out.println("Please enter your name: ");
+            allPlayers[i].setName();
         }
     }
     
