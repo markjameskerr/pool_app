@@ -15,14 +15,17 @@ public class JavaApp {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        int gamemode;
+        
+        Game game = new Game();
         Scanner s = new Scanner(System.in);
         System.out.println("Please enter which game mode you want to play? ");
         
-        gamemode = s.nextInt();
+        game.setGamemode(s.nextInt());
         
-        System.out.println("Thank you for selecting game mode " + gamemode);
-       
+        System.out.println("Thank you for selecting game mode " + game.getGamemode());
+        
+        
+        
         
     }
     
