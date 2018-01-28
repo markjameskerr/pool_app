@@ -33,7 +33,7 @@ int userOption = -1;
         
         while(userOption != 3){
             Scanner s = new Scanner(System.in);
-            System.out.println("Please choose who won the frame: " + "\n" + "0 = Player1" + "\n" + "1 = Player2" + "\n" + "3 = Exit Game");
+            System.out.println("Please choose who won the frame: " + "\n" + "0 = " + allPlayers[0].getName() + "\n" + "1 = " + allPlayers[1].getName()  + "\n" + "3 = Exit Game");
             
             userOption = s.nextInt();
             
