@@ -32,7 +32,6 @@ public class Player {
      */
     
     private String name;
-    
     public String getName(){
         return name;
     }
@@ -42,9 +41,7 @@ public class Player {
     }
     
     
-    
     private int framesPlayed;
-    
     public int getFramesPlayed() {
         return framesPlayed;
     }

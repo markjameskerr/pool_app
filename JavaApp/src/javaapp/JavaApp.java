@@ -16,12 +16,12 @@ public class JavaApp {
      */
     public static void main(String[] args) {
         
-        Game game = new Game();
+        
         Scanner s = new Scanner(System.in);
         System.out.println("Please enter which game mode you want to play? ");
         
-        game.setGamemode(s.nextInt());
-        
+        int gamemode = s.nextInt();
+        Game game = new Game(gamemode);
         System.out.println("Thank you for selecting game mode " + game.getGamemode());
         
  

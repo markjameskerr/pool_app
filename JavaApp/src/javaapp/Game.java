@@ -11,10 +11,6 @@ package javaapp;
  */
 public class Game {
 
-    public Game(){
-        
-        
-    }
 private int gamemode;
     /**
      * @return the gamemode
@@ -26,9 +22,19 @@ private int gamemode;
     /**
      * @param gamemode the gamemode to set
      */
-    public void setGamemode(int gamemode) {
+    
+    
+    private Player[] allPlayers;
+    
+    
+    
+    public Game(int gamemode){
         this.gamemode = gamemode;
+        if(gamemode == 1){
+            allPlayers = new Player[2];
+        }
     }
+    
     
     
 }
