@@ -24,9 +24,7 @@ public class JavaApp {
         
         System.out.println("Thank you for selecting game mode " + game.getGamemode());
         
-        
-        
-        
+ 
     }
     
 }
