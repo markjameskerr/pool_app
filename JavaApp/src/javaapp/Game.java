@@ -67,7 +67,7 @@ int userOption = -1;
         for (int i = 0; i < allPlayers.length; i ++)
         {
             System.out.println("Please enter your name: ");
-            allPlayers[i] = new Player();
+           // allPlayers[i] = new Player();
             allPlayers[i].setName(s.nextLine());
             System.out.println(allPlayers[i].getName());
         }
