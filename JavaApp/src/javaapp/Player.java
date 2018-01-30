@@ -26,6 +26,11 @@ public class Player {
     public int getFramesWon() {
         return framesWon;
     }
+    
+    public void setFramesWon(int framesWon)
+    {
+        this.framesWon = framesWon;
+    }
 
     /**
      * @return the framesPlayed
