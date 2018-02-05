@@ -22,3 +22,7 @@
 hs_err_pid*
 /JavaApp/nbproject/private/
 /JavaApp/build/
+/abstraction/nbproject/private/
+/abstraction/build/
+/interfaces/nbproject/private/
+/interfaces/build/
