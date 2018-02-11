@@ -79,7 +79,6 @@ int player2 = 0;
             allPlayers[i] = new Player(); // array storing instances of Player class
             allPlayers[i].setName(s.nextLine());
             System.out.println(allPlayers[i].getName());
-
         }
 }
 }

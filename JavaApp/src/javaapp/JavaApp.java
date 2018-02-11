@@ -16,14 +16,20 @@ public class JavaApp {
      */
     public static void main(String[] args) {
         
+        int gamemode = 0;
         Scanner s = new Scanner(System.in);
-        System.out.println("Please enter which game mode you want to play? ");
         
-        int gamemode = s.nextInt();
-        Game game = new Game(gamemode);
+        while (gamemode != -1) {
+            
+            System.out.println("Please enter which game mode you want to play? ");
+            System.out.println("Please use the following 1. Head to Head mode" + "\n" + "typing -1 will exit the application");
+            gamemode = s.nextInt();
+            Game game = new Game(gamemode);
+            game.playGame();
+        }
         
-        game.playGame();
         
+        System.out.println("Thanks for playing the game");
  
     }
     
