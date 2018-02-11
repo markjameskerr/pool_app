@@ -24,8 +24,14 @@ public class JavaApp {
             System.out.println("Please enter which game mode you want to play? ");
             System.out.println("Please use the following 1. Head to Head mode" + "\n" + "typing -1 will exit the application");
             gamemode = s.nextInt();
-            Game game = new Game(gamemode);
-            game.playGame();
+            
+            if (gamemode != -1){
+                Game game = new Game(gamemode);
+                game.playGame();
+            }
+            
+            
+            
         }
         
         

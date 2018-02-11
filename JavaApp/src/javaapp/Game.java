@@ -59,10 +59,17 @@ int player2 = 0;
                         System.out.println(allPlayers[0].getFramesWon() + " Frame(s) won by " + allPlayers[0].getName());
                         System.out.println(allPlayers[1].getFramesWon() + " Frame(s) won by " + allPlayers[1].getName());
 			break;
+                        }
+                
+                default: {
+                        System.out.println("Please try again this is not valid option");
+                        break;
+                }
+                
         }
         }
         }
-    }
+    
     
     public Game(int gamemode){
         
