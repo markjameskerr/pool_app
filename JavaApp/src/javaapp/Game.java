@@ -27,6 +27,28 @@ int player2 = 0;
     
     //private int score[] = new int[2];
     
+        public Game(int gamemode){
+        
+        this.gamemode = gamemode;
+        Scanner s = new Scanner(System.in);
+        
+        if(gamemode == 1){
+            allPlayers = new Player[2];
+        }
+        
+        for (int i = 0; i < allPlayers.length; i ++)
+        {
+            System.out.println("Please enter your name: ");
+            allPlayers[i] = new Player(); // array storing instances of Player class
+            allPlayers[i].setName(s.nextLine());
+            System.out.println(allPlayers[i].getName());
+        }
+}
+        
+    public void setupGame(){
+            
+    }
+    
     
     public void playGame(){
         
@@ -71,21 +93,5 @@ int player2 = 0;
         }
     
     
-    public Game(int gamemode){
-        
-        this.gamemode = gamemode;
-        Scanner s = new Scanner(System.in);
-        
-        if(gamemode == 1){
-            allPlayers = new Player[2];
-        }
-        
-        for (int i = 0; i < allPlayers.length; i ++)
-        {
-            System.out.println("Please enter your name: ");
-            allPlayers[i] = new Player(); // array storing instances of Player class
-            allPlayers[i].setName(s.nextLine());
-            System.out.println(allPlayers[i].getName());
-        }
-}
+
 }
