@@ -31,12 +31,9 @@ public class JavaApp {
                 game.playGame();
                 
             }
-            
-            
-            
+
         }
-        
-        
+
         System.out.println("Thanks for playing the game");
  
     }
