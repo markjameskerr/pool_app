@@ -35,6 +35,9 @@ int player2 = 0;
         if(gamemode == 1){
             allPlayers = new Player[2];
         }
+        else if(gamemode == 2){
+            allPlayers = new Player[2];
+        }
         
         for (int i = 0; i < allPlayers.length; i ++)
         {

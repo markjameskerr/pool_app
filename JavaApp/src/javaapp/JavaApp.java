@@ -22,10 +22,10 @@ public class JavaApp {
         while (gamemode != -1) {
             
             System.out.println("Please enter which game mode you want to play? ");
-            System.out.println("Please use the following 1. Head to Head mode" + "\n" + "typing -1 will exit the application");
+            System.out.println("Please use the following 1. Head to Head mode" + "\n" + "2. King of the table" + "\n" + "typing -1 will exit the application");
             gamemode = s.nextInt();
             
-            if (gamemode != -1 && gamemode <= 1){
+            if (gamemode != -1 && gamemode <= 2){
                 Game game = new Game(gamemode);
                 game.setupGame();
                 game.playGame();
