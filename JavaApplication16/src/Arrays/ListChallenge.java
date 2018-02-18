@@ -24,6 +24,9 @@ public class ListChallenge {
         while (num != -1){
             System.out.println("Please enter a value to add to the list");
             num = s.nextInt();
+            if(num == -1){
+               break; 
+            }
             numbers.add(num);
         }
         
